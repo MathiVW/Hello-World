@@ -1,1 +1,1 @@
-{"deviceList":[{"deviceName":"192.168.112.78","commands":["None:@tmsh create ltm virtual new_vip  destination 3.3.3.3:80:@0:@{"sleep": 0, "wait": 0}"]}]}
+{"deviceList":[{"deviceName":"192.168.112.78","commands":["None:@tmsh create ltm virtual new_vip  destination 3.3.3.65:80:@0:@{"sleep": 0, "wait": 0}"]}]}
