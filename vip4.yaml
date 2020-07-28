@@ -7,9 +7,9 @@
            bigip_virtual_server:
              state: present
              partition: Common
-             name: new_vip_test
-             destination: 19.89.12.12
-             port: 80
+             name: new_vip_78
+             destination: 19.89.127.127
+             port: 90
              provider:
                server: 192.168.112.78
                user: appviewx
