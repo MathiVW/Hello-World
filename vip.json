@@ -1,0 +1,39 @@
+{
+    "class": "AS3",
+    "action": "patch",
+    "schemaVersion": "3.11.0",
+    "persist": true,
+    "patchBody": [
+        {
+            "op": "add",
+            "path": "/ONUG/mmmeet",
+            "value": {
+                "class": "Application",
+                "template": "generic",
+                "mmmeet": {
+                    "class": "Service_HTTP",
+                    "snat": "auto",
+                    "virtualAddresses": [
+                        "4.4.4.4"
+                    ],
+                    "virtualPort": 80,
+                    "pool": "mmmmm"
+                },
+                "mmmmm": {
+                    "class": "Pool",
+                    "monitors": [
+                        "http"
+                    ],
+                    "members": [
+                        {
+                            "servicePort": 80,
+                            "serverAddresses": [
+                                "3.3.3.3"
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
